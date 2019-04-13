@@ -17,8 +17,9 @@ end
 def monopoly_with_third_tier
 	#copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
 	 monopoly = {:railroads => {:names => {:reading_railroad => {}, 
-	                                       :pennsylvania_railroad => {}
-	                                       :b_and_o_railroad => {}
+	                                       :pennsylvania_railroad => {},
+	                                       :b_and_o_railroad => {},
+	                                       :shortline => {}
 	                                    	},  
 	                            :rent_in_dollars => {:one_piece_owned => 25, 
 	                                                :two_pieces_owned => 50, 
@@ -27,17 +28,6 @@ def monopoly_with_third_tier
 	                            }, 
 	             :pieces => {4}
 	          	}
-
-      it "sets the 4th key of the :names hash to a symbol, :shortline, whose value is an empty hash" do
-
-        expect(monopoly_with_third_tier.keys.count).to eq(1)
-        expect(monopoly_with_third_tier.values[0].values.count).to eq(3)
-        expect(monopoly_with_third_tier.values[0][:names].keys[3]).to eq(:shortline)
-        expect(monopoly_with_third_tier.values[0][:names].values[3]).to eq({})
-      end
-    end
-  end	
-end
 
 def monopoly_with_fourth_tier
 	#copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
