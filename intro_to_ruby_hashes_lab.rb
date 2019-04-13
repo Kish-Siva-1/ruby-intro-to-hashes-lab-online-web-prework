@@ -11,7 +11,7 @@ def monopoly
 end
 
 def monopoly_with_second_tier
-  monopoly = {:railroads => {:names = {}}, :pieces => {4}}
+  monopoly = {:railroads => {:names => {}}, :pieces => {4}}
   
       it "sets the first key of the :railroads hash to a symbol, :pieces, whose value is the integer 4" do
         # the goal of this part of the lab is to have you build the multidimentional monopoly hash in sequential order
