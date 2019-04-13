@@ -16,7 +16,15 @@ end
 
 def monopoly_with_third_tier
 	#copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
-	 monopoly = {:railroads => {:names => {}, :rent_in_dollars => {25, :one_piece_owned => {}, :two_pieces_owned => 50, :three_pieces_owned => 100, :four_pieces_owned => 200}}, :pieces => {4}}
+	 monopoly = {:railroads => {:names => {}, 
+	                            :rent_in_dollars => {25, 
+	                                                :one_piece_owned => {}, 
+	                                                :two_pieces_owned => 50, 
+	                                                :three_pieces_owned => 100, 
+	                                                :four_pieces_owned => 200}
+	                            }, 
+	             :pieces => {4}
+	          	}
       it "sets the 1st key of the :rent_in_dollars hash to a symbol, :one_piece_owned, whose value is the integer 25" do
         expect(monopoly_with_third_tier.values[0].values.count).to eq(3)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars].values[0]).to eq(25)
